@@ -9,27 +9,27 @@ These images are generated from the design in [guibranco/progressbar](https://gi
 Each image is available at:
 
 ```
-https://progressbar.demolab.com/img/<percentage>.svg
+https://progress-bar.demolab.com/img/<percentage>.svg
 ```
 
 where `<percentage>` is a number from `1` to `100`. For example:
 
-| Percentage | URL                                         |
-| ---------: | ------------------------------------------- |
-|         1% | https://progressbar.demolab.com/img/1.svg   |
-|        50% | https://progressbar.demolab.com/img/50.svg  |
-|       100% | https://progressbar.demolab.com/img/100.svg |
+| Percentage | URL                                          |
+| ---------: | -------------------------------------------- |
+|         1% | https://progress-bar.demolab.com/img/1.svg   |
+|        50% | https://progress-bar.demolab.com/img/50.svg  |
+|       100% | https://progress-bar.demolab.com/img/100.svg |
 
 ### Markdown
 
 ```markdown
-![Progress](https://progressbar.demolab.com/img/75.svg)
+![Progress](https://progress-bar.demolab.com/img/75.svg)
 ```
 
 ### HTML
 
 ```html
-<img src="https://progressbar.demolab.com/img/75.svg" alt="75%" />
+<img src="https://progress-bar.demolab.com/img/75.svg" alt="75%" />
 ```
 
 ## Colors
@@ -47,7 +47,7 @@ The fill color depends on the percentage:
 If you were using a dynamic link from the original project, replace it with the static URL for the same percentage:
 
 ```
-https://progressbar.demolab.com/img/<percentage>.svg
+https://progress-bar.demolab.com/img/<percentage>.svg
 ```
 
 Only whole percentages from 1 to 100 are available. Values with decimals, or 0%, are not supported.
