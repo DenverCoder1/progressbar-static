@@ -1,5 +1,10 @@
 # progressbar-static
 
+![Progress](https://progress-bar.demolab.com/img/25.svg)
+![Progress](https://progress-bar.demolab.com/img/50.svg)
+![Progress](https://progress-bar.demolab.com/img/100.svg)
+
+
 Static SVG progress bars for every whole percentage from **1% to 100%**, hosted on GitHub Pages.
 
 These images are generated from the design in [guibranco/progressbar](https://github.com/guibranco/progressbar). That project also supported dynamic links (where the percentage was computed on request), but the dynamic service is no longer working. This repository pre-generates every value as a plain static file, so there is no server to go down.
