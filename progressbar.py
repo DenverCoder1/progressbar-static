@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Generate 1.svg ... 100.svg progress-bar badges."""
+"""
+Generate 1.svg ... 100.svg progress-bar badges.
+
+Run this script with an optional output directory argument:
+    ./progressbar.py [output_dir]
+"""
 import os
 import sys
 
