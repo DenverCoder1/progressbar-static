@@ -4,7 +4,6 @@
 ![Progress](https://progress-bar.demolab.com/img/50.svg)
 ![Progress](https://progress-bar.demolab.com/img/100.svg)
 
-
 Static SVG progress bars for every whole percentage from **0% to 100%**, hosted on GitHub Pages.
 
 These images are generated from the design in [guibranco/progressbar](https://github.com/guibranco/progressbar). That project also supported dynamic links (where the percentage was computed on request), but the dynamic service is down as of writing this. This repository pre-generates every value as a plain static file, so it doesn't rely on Vercel's usage limits.
@@ -19,11 +18,11 @@ https://progress-bar.demolab.com/img/<percentage>.svg
 
 where `<percentage>` is a number from `0` to `100`. For example:
 
-| Percentage | URL                                          |
-| ---------: | -------------------------------------------- |
-|         1% | https://progress-bar.demolab.com/img/1.svg   |
-|        50% | https://progress-bar.demolab.com/img/50.svg  |
-|       100% | https://progress-bar.demolab.com/img/100.svg |
+| Percentage | URL                                          | Preview                                                   |
+| ---------: | -------------------------------------------- | --------------------------------------------------------- |
+|         1% | https://progress-bar.demolab.com/img/1.svg   | ![Progress](https://progress-bar.demolab.com/img/1.svg)   |
+|        50% | https://progress-bar.demolab.com/img/50.svg  | ![Progress](https://progress-bar.demolab.com/img/50.svg)  |
+|       100% | https://progress-bar.demolab.com/img/100.svg | ![Progress](https://progress-bar.demolab.com/img/100.svg) |
 
 ### Markdown
 
@@ -37,15 +36,16 @@ where `<percentage>` is a number from `0` to `100`. For example:
 <img src="https://progress-bar.demolab.com/img/75.svg" alt="75%" />
 ```
 
-## Colors
+## Styles
 
-The fill color depends on the percentage:
+The progress bars are available in four styles, each in its own directory:
 
-| Range      | Color  | Hex       |
-| ---------- | ------ | --------- |
-| 0% – 29%   | Red    | `#d9534f` |
-| 30% – 69%  | Orange | `#f0ad4e` |
-| 70% – 100% | Green  | `#5cb85c` |
+| Style         | Directory       | Preview                                                            |
+| ------------- | --------------- | ------------------------------------------------------------------ |
+| Flat          | `img`           | ![Progress](https://progress-bar.demolab.com/img/25.svg)           |
+| Square        | `square`        | ![Progress](https://progress-bar.demolab.com/square/25.svg)        |
+| Plastic       | `plastic`       | ![Progress](https://progress-bar.demolab.com/plastic/25.svg)       |
+| For-the-badge | `for-the-badge` | ![Progress](https://progress-bar.demolab.com/for-the-badge/25.svg) |
 
 ## Migrating from the dynamic service
 

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90" height="20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+  <!-- ClipPath to constrain the shadow within the progress bar -->
+  <defs>
+    <clipPath id="progress_clip">
+      <rect rx="5" x="0" width="90" height="100%"/>
+    </clipPath>
+  </defs>
+
+  <linearGradient id="a" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+
+  <!-- Main background with consistent border radius -->
+  <rect rx="5" x="0" width="90" height="100%" fill="#555"/>
+
+  <!-- Progress bar background with the same border radius -->
+  <rect rx="5" x="0" width="90" height="100%" fill="#ECEFF1" />
+
+  <!-- Progress fill with the same border radius to avoid sharp corners -->
+  <rect rx="5" x="0" width="69.3" height="100%" fill="#91bc13" />
+
+  <!-- Apply the clipping path to keep everything inside the border radius -->
+
+  <!-- Subtle top-to-bottom shading, clipped to the rounded bar -->
+  <rect rx="5" width="90" height="100%" fill="url(#a)" clip-path="url(#progress_clip)" />
+
+  <!-- Gloss for progress bar -->
+  <linearGradient id="progress_gloss" x1="0" y1="0" x2="0" y2="0.6">
+    <stop offset="0%" stop-color="rgba(255,255,255,0.85)" />
+    <stop offset="60%" stop-color="rgba(255,255,255,0)" />
+  </linearGradient>
+  <rect x="0" y="0" width="90" height="12" fill="url(#progress_gloss)" clip-path="url(#progress_clip)" />
+
+  <!-- Shadow for progress bar -->
+  <linearGradient id="progress_shadow" x1="0" y1="0.6" x2="0" y2="1">
+    <stop offset="0%" stop-color="rgba(0,0,0,0)" />
+    <stop offset="100%" stop-color="rgba(0,0,0,0.2)" />
+  </linearGradient>
+  <rect x="0" y="9" width="89" height="11" fill="url(#progress_shadow)" clip-path="url(#progress_clip)" />
+
+  <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11" font-weight="normal" letter-spacing="0">
+    <text x="45.0" y="15" fill="#010101" fill-opacity=".3" >
+      77%
+    </text>
+    <text x="45.0" y="14" >
+      77%
+    </text>
+  </g>
+</svg>
