@@ -49,10 +49,10 @@ The progress bars are available in four styles, each in its own directory:
 
 ## Regenerating the images
 
-The SVGs are produced by `generate_svgs.py`:
+The SVGs are produced by `progressbar.py`:
 
 ```bash
-python3 generate_svgs.py .
+python3 progressbar.py .
 ```
 
 This writes `0.svg` through `100.svg` into the given directory (the current directory if none is given). The fill width is `percentage × 0.9` pixels on a 90 × 20 px bar.
