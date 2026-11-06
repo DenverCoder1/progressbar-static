@@ -43,7 +43,7 @@ The fill color depends on the percentage:
 
 | Range      | Color  | Hex       |
 | ---------- | ------ | --------- |
-| 1% – 29%   | Red    | `#d9534f` |
+| 0% – 29%   | Red    | `#d9534f` |
 | 30% – 69%  | Orange | `#f0ad4e` |
 | 70% – 100% | Green  | `#5cb85c` |
 
@@ -65,7 +65,7 @@ The SVGs are produced by `generate_svgs.py`:
 python3 generate_svgs.py img
 ```
 
-This writes `1.svg` through `100.svg` into the given directory (the current directory if none is given). The fill width is `percentage × 0.9` pixels on a 90 × 20 px bar.
+This writes `0.svg` through `100.svg` into the given directory (the current directory if none is given). The fill width is `percentage × 0.9` pixels on a 90 × 20 px bar.
 
 ## Credits
 
