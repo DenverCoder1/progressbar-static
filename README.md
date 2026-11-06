@@ -47,22 +47,12 @@ The progress bars are available in four styles, each in its own directory:
 | Plastic       | `plastic`       | ![Progress](https://progress-bar.demolab.com/plastic/75.svg)       |
 | For-the-badge | `for-the-badge` | ![Progress](https://progress-bar.demolab.com/for-the-badge/100.svg) |
 
-## Migrating from the dynamic service
-
-If you were using a dynamic link from the original project, replace it with the static URL for the same percentage:
-
-```
-https://progress-bar.demolab.com/img/<percentage>.svg
-```
-
-Only whole percentages from 0 to 100 are available. Values with decimals are not supported.
-
 ## Regenerating the images
 
 The SVGs are produced by `generate_svgs.py`:
 
 ```bash
-python3 generate_svgs.py img
+python3 generate_svgs.py .
 ```
 
 This writes `0.svg` through `100.svg` into the given directory (the current directory if none is given). The fill width is `percentage × 0.9` pixels on a 90 × 20 px bar.
