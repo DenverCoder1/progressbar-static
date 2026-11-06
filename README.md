@@ -43,9 +43,9 @@ The progress bars are available in four styles, each in its own directory:
 | Style         | Directory       | Preview                                                            |
 | ------------- | --------------- | ------------------------------------------------------------------ |
 | Flat          | `img`           | ![Progress](https://progress-bar.demolab.com/img/25.svg)           |
-| Square        | `square`        | ![Progress](https://progress-bar.demolab.com/square/25.svg)        |
-| Plastic       | `plastic`       | ![Progress](https://progress-bar.demolab.com/plastic/25.svg)       |
-| For-the-badge | `for-the-badge` | ![Progress](https://progress-bar.demolab.com/for-the-badge/25.svg) |
+| Square        | `square`        | ![Progress](https://progress-bar.demolab.com/square/50.svg)        |
+| Plastic       | `plastic`       | ![Progress](https://progress-bar.demolab.com/plastic/75.svg)       |
+| For-the-badge | `for-the-badge` | ![Progress](https://progress-bar.demolab.com/for-the-badge/100.svg) |
 
 ## Migrating from the dynamic service
 
