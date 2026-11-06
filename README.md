@@ -5,7 +5,7 @@
 ![Progress](https://progress-bar.demolab.com/img/100.svg)
 
 
-Static SVG progress bars for every whole percentage from **1% to 100%**, hosted on GitHub Pages.
+Static SVG progress bars for every whole percentage from **0% to 100%**, hosted on GitHub Pages.
 
 These images are generated from the design in [guibranco/progressbar](https://github.com/guibranco/progressbar). That project also supported dynamic links (where the percentage was computed on request), but the dynamic service is down as of writing this. This repository pre-generates every value as a plain static file, so it doesn't rely on Vercel's usage limits.
 
@@ -17,7 +17,7 @@ Each image is available at:
 https://progress-bar.demolab.com/img/<percentage>.svg
 ```
 
-where `<percentage>` is a number from `1` to `100`. For example:
+where `<percentage>` is a number from `0` to `100`. For example:
 
 | Percentage | URL                                          |
 | ---------: | -------------------------------------------- |
@@ -55,7 +55,7 @@ If you were using a dynamic link from the original project, replace it with the 
 https://progress-bar.demolab.com/img/<percentage>.svg
 ```
 
-Only whole percentages from 1 to 100 are available. Values with decimals, or 0%, are not supported.
+Only whole percentages from 0 to 100 are available. Values with decimals are not supported.
 
 ## Regenerating the images
 

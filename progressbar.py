@@ -3,7 +3,7 @@
 Generate 1.svg ... 100.svg progress-bar badges.
 
 Run this script with an optional output directory argument:
-    ./progressbar.py [output_dir]
+py progressbar.py img
 """
 import os
 import sys
@@ -70,7 +70,7 @@ def color_for(pct: int) -> str:
 
 def main() -> None:
     os.makedirs(OUT_DIR, exist_ok=True)
-    for pct in range(1, 101):
+    for pct in range(0, 101):
         svg = TEMPLATE.format(
             pct=pct,
             fill_width=round(pct * 0.9, 1),  # 90px bar -> 0.9px per percent
